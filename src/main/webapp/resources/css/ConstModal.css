@@ -1,0 +1,99 @@
+@charset "EUC-KR";
+
+.constModal {
+	display: none; 
+	width: 100%; height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    opacity: 80%;
+    z-index: 100;
+    background-color: black;
+}
+.constModal.on {
+	display: block;
+}
+
+.closeBtn {
+	display: none;
+	position: absolute;
+	right: 1%;
+	z-index: 120;
+	cursor: pointer;
+	font-size: 36px;
+}
+.closeBtn.on, .modalContents.on {
+	display: block;
+}
+
+.modalContents {
+	display: none;
+	width: 80%; height: 80%;
+    position: absolute;
+    top: 47%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 110;
+    background-color: #C4C4C4;
+    overflow: auto;
+}
+
+/* 테이블 영역 */
+.tableCont {
+	width: 100%;
+    color: black;
+    table-layout: fixed;	
+    font-size: 18px;
+    background-color: #ECECEC;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+.tableCont.sec1 {
+	height: 100%;	
+}
+.tableCont.sec1 td {
+	background-color: white;
+}
+/* 테이블 레이아웃*/
+.modalContents .contTitle {
+	background-color: #5E7DC0;
+	color: white;
+	text-align: center;
+	height:70px;
+}
+
+.contRow {
+	min-height: 40px;
+}
+
+.contName {
+	background-color: #DDE8FA;
+	text-align: center;
+}
+.modalContents .content {
+	padding: 0 1rem;
+	background-color: white;
+}
+.modalContents .content.three {
+	padding-left: 0;
+	text-align: center;
+}
+
+.imgSection {
+	position: relative;
+	text-align: center;	
+}
+.imgSection .imgfile {
+	width: 300px; height: 160px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	
+}
+.changeBtn {
+	width: 90%;
+    height: 90%;
+    background-color: #5a6268;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}

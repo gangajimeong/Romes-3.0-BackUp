@@ -1,0 +1,149 @@
+/**
+ * 
+ */
+import * as RESULT from './ResultCodes.js';
+export default class WorkOrder {
+	webSocketTest(){
+		const webSocketTest = document.getElementById('webSocketTest');
+		webSocketTest.addEventListener('click',socketTest);
+	}
+	
+	setTableCollapse() {
+		var tableRows = document.getElementById('workOrder-dataTable').children;
+		for (var i = 0; i < tableRows.length; i++) {
+			var row = tableRows[i];
+			if (!row.classList.contains("dataContent")) {
+				row.addEventListener('click', function() {
+					var idx = [...this.parentElement.children].indexOf(this)+1;
+					console.log(idx);
+					if (tableRows[idx].getElementsByTagName('tbody')[0].children.length != 0) {
+						var id = '#' + this.children[0].innerText;
+						$(id).collapse('toggle');
+					}
+				});
+
+			}
+
+		}
+
+
+	}
+	setDIalogEvent() {
+		var submitWork = document.getElementById('workOrder-submit');
+		var isRemake = document.getElementById('workInfo-remake');
+		var remarks = document.getElementById('workInfo-remark');
+
+		submitWork.addEventListener('click', function(e) {
+			var id = this.getAttribute('name');
+			showLoading();
+			this.disabled = true;
+			console.log(id);
+			axios.get('remakeWork', {
+				params: {
+					workid: id,
+					remake: getSelectedValue(isRemake),
+					remark: remarks.value,
+					errorid: 100
+				}
+			}).then(function(response) {
+				var resultcode = response.data.result;
+				if (resultcode == RESULT.SUCCESS) {
+					alert('저장되었습니다.');
+					window.location.reload();
+				} else if (resultcode == RESULT.REQUIRE_ELEMENT_ERROR) {
+					alert('로그인후 사용해 주세요.')
+					window.location.reload();
+				} else {
+					alert('저장 실패');
+				}
+			}).catch(function(error) {
+				alert(error);
+			})
+			this.disabled=false;
+			hideLoading();
+		})
+		$('#workOrder-modal').on('show.bs.modal', function(e) {
+			var id = $(e.relatedTarget).attr('data-id');
+			submitWork.setAttribute("name", id);
+		});
+	}
+	setFilterEvt(){
+		var table = document.getElementById('workOrder-dataTable');
+		var filterIdx = document.getElementById('workInfo-select');
+		var text =document.getElementById('workInfo-filter');
+		text.addEventListener('input',function(){
+			repaintTable(table,getSelectedValue(filterIdx),this);
+		})
+	}
+}
+function hideAllCollapse(){
+		var tableRows = document.getElementById('workOrder-dataTable').children;
+		for (var i = 0; i < tableRows.length; i++) {
+			var row = tableRows[i];
+			if (row.classList.contains("dataContent")) {
+				var d = row.getElementsByTagName('div')[0];
+				var id = '#'+d.getAttribute('id');
+				$(id).collapse('hide');
+
+			}
+
+		}
+}
+function repaintTable(table,filter,text){
+	hideAllCollapse();
+	var tableRows = table.children;
+	var idx = 1;
+	for (var i = 0; i < tableRows.length; i++) {
+			var row = tableRows[i];
+			if (!row.classList.contains("dataContent")) {
+				var tds = row.children;
+				
+				if(tds[filter].innerText.includes(text.value)){
+					tds[1].innerText = idx;
+					row.style.display="";
+					idx++;				
+				}else{
+					row.style.display="none";
+				}
+
+			}
+
+		}
+
+}
+function showLoading(){
+	var loading = document.getElementById('workInfo-loading');
+	loading.style.display="";
+}
+function hideLoading(){
+	var loading = document.getElementById('workInfo-loading');
+	loading.style.display="none";
+}
+function getSelectedValue(select) {
+	return select.options[select.selectedIndex].value;
+}
+
+function socketTest(){
+	console.log("hi");
+	
+	let websocket;
+	
+	let wsUri = "ws://192.168.0.32:8080/ROMES/WebSocket/echo.do"
+	
+	websocket = new WebSocket(wsUri);
+	console.log(websocket);
+	websocket.onopen = opOpen;
+	websocket.onmessage = onMessage;
+}
+
+function opOpen() {
+	console.log("연결");
+}
+
+function sendMessage(message){
+	console.log("메시지");
+}
+
+function onMessage(evt){
+	console.log("메시지 수신");
+}

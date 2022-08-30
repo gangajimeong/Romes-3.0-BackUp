@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.connection.pool_size">100</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="current_session_context_class">thread</property>
+
+		<mapping class="com.company.ROMES.entity.Authorities" />
+		<mapping class="com.company.ROMES.entity.BluePrint" />
+		<mapping class="com.company.ROMES.entity.CommonCode" />
+		<mapping class="com.company.ROMES.entity.Company_manager" />
+		<mapping class="com.company.ROMES.entity.Company" />
+		<mapping class="com.company.ROMES.entity.CycleTime" />
+		<mapping class="com.company.ROMES.entity.Division" />
+		<mapping class="com.company.ROMES.entity.E_Bom" />
+		<mapping class="com.company.ROMES.entity.ErrorCode" />
+		<mapping class="com.company.ROMES.entity.LocationMaster" />
+		<mapping class="com.company.ROMES.entity.Lot" />
+		<mapping class="com.company.ROMES.entity.M_Bom" />
+		<mapping class="com.company.ROMES.entity.ManufactureProduct" />
+		<mapping class="com.company.ROMES.entity.Material" />
+		<mapping class="com.company.ROMES.entity.OrderHistory" />
+		<mapping class="com.company.ROMES.entity.ProcessUnit" />
+		<mapping class="com.company.ROMES.entity.ProductionPlan" />
+		<mapping class="com.company.ROMES.entity.ReceivedOrderInfo" />
+		<mapping class="com.company.ROMES.entity.SRHistory" />
+		<mapping class="com.company.ROMES.entity.User" />
+		<mapping class="com.company.ROMES.entity.WorkingLine" />
+		<mapping class="com.company.ROMES.entity.WorkOrderInfo" />
+		<mapping class="com.company.ROMES.entity.ErrorProductHistory" />
+		<mapping class="com.company.ROMES.entity.Log" />
+		<mapping class="com.company.ROMES.entity.CommuteCode" />
+		<mapping class="com.company.ROMES.entity.CommuteHistory" />
+		<mapping class="com.company.ROMES.entity.ConstructionPlan" />
+		<mapping class="com.company.ROMES.entity.LatLng" />
+		<mapping class="com.company.ROMES.entity.ConstructionResult" />
+		<mapping class="com.company.ROMES.entity.ShippingPlan" />
+		<mapping class="com.company.ROMES.entity.ShippingProduct" />
+		<mapping class="com.company.ROMES.entity.DesignMaster" />
+		<mapping class="com.company.ROMES.entity.ShippingHistory" />
+		<mapping class="com.company.ROMES.entity.ConstructionLocation" />
+		<mapping class="com.company.ROMES.entity.WorkOrderChangeHistory" />
+		<mapping class="com.company.ROMES.entity.Devices" />
+		<mapping class="com.company.ROMES.entity.DownTime" />
+		<mapping class="com.company.ROMES.entity.Notice" />
+		<mapping class="com.company.ROMES.entity.DocumentForApproaval"/>
+		<mapping class="com.company.ROMES.entity.ApprovalInfo"/>
+		<mapping class="com.company.ROMES.entity.LabelPrinter"/>
+		<mapping class="com.company.ROMES.entity.Brand"/>
+		<mapping class="com.company.ROMES.entity.ConstructionCompany"/>
+	</session-factory>
+
+</hibernate-configuration>

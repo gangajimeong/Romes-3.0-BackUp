@@ -1,0 +1,44 @@
+@charset "EUC-KR";
+/* Style tab links */
+.tablink {
+	background-color: #3C5B92;
+	color: white;
+	float: left;
+	border-radius: 0 0 0 0;
+	outline: none;
+	cursor: pointer;
+	padding-top: 0.4vh;
+	padding:0.4vh 0.1vw 0px 0.1vw; 
+	height: 4vh;
+	width: 10vw;
+	font-size: 1vw;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 1px;
+	font-weight: bold;
+}
+.hiddenRow {
+    padding: 5px 5px 5px 5px !important;
+   
+   
+   
+}
+.close>span {
+	font-size: 1vw;
+	color: white;
+	vertical-align: middle;
+}
+
+.tablink:hover {
+	background-color: #3C5B92;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+	color: white;
+	display: none;
+}
+.close{
+	position: relative;
+}

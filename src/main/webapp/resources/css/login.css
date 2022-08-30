@@ -1,0 +1,45 @@
+@charset "EUC-KR";
+
+.loginBgd{
+	background-color: white;
+	
+}
+#login-main{
+	background-color: #3C5B92;
+}
+
+.Join-input{
+	
+	width: 100%;
+}
+
+.join-inputForCheck{
+	width: 80%;
+}
+.jumbotron{
+	height: 100%;
+	text-align: center;
+}
+.a-font{
+	font-size: 0.8vw;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	color: red;
+	z-index: 999998;
+}
+.login-label{
+	color: black;
+}
+.login-header{
+	background: #5E7DC0;
+}
+.login-footer{
+	background:#5E7DC0;
+}
+.btn-login{
+	background:#5E7DC0;
+	color: white;
+}
+.btn-login:hover{
+	background: #3C5B92;
+}

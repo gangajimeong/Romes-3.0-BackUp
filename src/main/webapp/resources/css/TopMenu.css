@@ -1,0 +1,156 @@
+
+
+#topMenu {
+	background-color: #5E7DC0;
+}
+#topMenu ul {
+	display: inline-block;
+	padding: 0 0 0 0;
+	list-style: none;
+	margin-bottom: 0px !important;
+}
+
+#topMenu ul li {
+	display: inline-block;
+	
+	z-index: 1;
+	margin-right: 1vw;
+	
+
+}
+
+#topMenu ul>li>ul>li {
+	margin-top: 0px !important;
+}
+
+#topMenu a {
+	display: block;
+	color: #FFF;
+	font-size: 1.5vh;
+	line-height: 3vh;
+	text-decoration: none;
+}
+
+#topMenu a:hover {
+	background-color: #000000;
+	height: inherit;
+}
+
+/* Hide Dropdowns by Default */
+#topMenu ul ul {
+	display: none;
+	position: absolute;
+	top: 3vh; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+#topMenu ul li:hover>ul {
+	display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+#topMenu ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+	margin-top: 1vh;
+}
+
+/* Second, Third and more Tiers	*/
+#topMenu ul ul ul li {
+	position: relative;
+	top: -3vh;
+	left: 170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+.many:after {
+	content: ' >';
+}
+
+li>a:only-child:after {
+	content: '';
+}
+/* 로그인 */
+.LoginLogo {
+	width: 5%;
+}
+/*로그인 하단 a 링크 css  */
+.login-footer>a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.login-footer>a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.login-footer>a:hover {
+	text-decoration: none;
+}
+
+.login {
+	width: 10% !important;
+	padding: 0 0 0 0;
+}
+
+.logoutForm {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.logout {
+	color: white;
+	background-color: #303030;
+	padding: 3 3 3 3;
+	font-size: 1.5vh;
+	border-radius: 0 0 0 0;
+}
+
+.logout:hover {
+	background-color: #000000;
+}
+
+::-webkit-scrollbar {
+	width: 0.1rem;
+	height: 0.3rem;
+}
+
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #525965;
+	border: 0px none #ffffff;
+	border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #525965;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #525965;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+	background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+	background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}

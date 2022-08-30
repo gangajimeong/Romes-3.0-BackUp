@@ -1,0 +1,10 @@
+export const SUCCESS = 0;
+export const NO_RESULT = 1;
+export const DB_CONNECT_ERROR = 2;
+export const REQUIRE_ELEMENT_ERROR= 3;
+export const AUTHORITY_ERROR=4;//권한 오류
+export const DATA_ALERT_ERROR = 5; // session.save,update,error 오류
+export const UNABLE_TO_UPDATE = 6;
+export const FAIL_RESULT = 7;
+export const UNKNOWN_ERROR = 99;
+export const TEst=1;

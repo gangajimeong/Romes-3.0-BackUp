@@ -1,0 +1,22 @@
+package com.company.ROMES.Controller;
+
+import org.hibernate.SessionFactory;
+import org.json.simple.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class SelfCheckController {
+	
+	@RequestMapping(value="/selfCheck",method=RequestMethod.GET)
+	@ResponseBody
+	public String selfCheck() {
+		JSONObject result = new JSONObject();
+		
+		return result.toJSONString();
+	}
+}

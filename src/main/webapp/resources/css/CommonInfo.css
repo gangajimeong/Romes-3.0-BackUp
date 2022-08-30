@@ -1,0 +1,712 @@
+@charset "EUC-KR";
+/* title pannel */
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap')
+	;
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+#main {
+	border-radius: 0 0 0 0;
+	/* height: 92.51379310344827vh */
+}
+
+#UserBody>tr>td {
+	vertical-align: middle !important;
+}
+
+select {
+	text-align-last: center !important;
+	text-align: center !important;
+	-ms-text-align-last: center !important;
+	-moz-text-align-last: center !important;
+}
+
+.card-headerMain {
+	font-size: 1vw !important;
+	padding: 0.5 1 1 1;
+	background-color: #D8EBF9 !important;
+	border-radius: 0 0 0 0 !important;
+}
+
+.page-titles {
+	font-size: 2vh;
+	padding: 5px 5px 5px 5px;
+}
+
+.page-title {
+	padding-top: 0.3rem;
+	margin-left: 0.11vw;
+	font-size: 2vh;
+	height: 1.6rem;
+}
+/*Search css  */
+.search-group {
+	width: 28%;
+}
+
+.search-select, .search-control, .search-append {
+	height: 1.6rem;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.search-select {
+	padding: 0px 20px 0px 0px !important;
+	text-align: center;
+}
+
+.search-select>option {
+	padding: 0px 0px 0px 0px !important;
+}
+
+.custom-select:not(.OnlyModal) {
+	vertical-align: middle;
+	font-size: 1.3vh;
+}
+
+/*등록 수정 창 css*/
+.register {
+	padding: 2 2 2 2;
+	background: #3C5B92;
+	border-radius: 0px 0px 0px 0px !important;
+}
+
+.regi-ul {
+	margin: 0 0 -2 0;
+}
+
+.regi-group {
+	width: 100%;
+}
+
+.regi-btn {
+	width: 100%;
+}
+
+.regi-group-text {
+	min-width: 6rem;
+	text-align: center;
+}
+
+.regi-group-textArea {
+	height: 4.6rem;
+	min-width: 6rem;
+	margin-top: 0.5rem;
+}
+
+textArea {
+	resize: none;
+}
+
+.regi-group-text, .regi {
+	height: 1.6rem;
+	margin-top: 0.5rem;
+}
+
+.regi-li a {
+	padding-top: 0.1vh;
+	padding-bottom: 0.1vh;
+	font-size: 0.3vh;
+}
+
+.regi-ul li a {
+	padding-top: 0.3vh;
+	padding-bottom: 0.3vh;
+}
+
+.regi-delete thead tr th {
+	padding: 0 0 0 0 !important;
+	font-size: 0.5vh !important;
+}
+
+.regi-update thead tr th {
+	padding: 0 0 0 0;
+	font-size: 0.5vh;
+}
+
+.regi-card {
+	border-radius: 0 0 0 0;
+}
+
+.regi-body {
+	padding: 3 3 3 3;
+}
+
+.regi-input-body {
+	padding: 10 10 10 10;
+}
+
+.regi-body .card {
+	border-radius: 0 0 0 0;
+}
+
+.regi-header {
+	padding: 0 0 0 0;
+}
+
+.sub-table {
+	font-size: 0.1vh;
+}
+
+.sub-table thead th, .sub-table tbody td, .sub-table tbody td i {
+	padding: 0px 0px 0px 0px !important;
+}
+
+.choice {
+	padding: 0 2 0 2;
+}
+/* card-body */
+.mainPanel {
+	font-size: 1vw;
+	padding: 0 0 0 0;
+}
+
+.panel-deck {
+	padding: 0 0.5rem 0 1.5rem;
+}
+
+.p0>tr>td {
+	padding: 0px 0px 0px 0px !important;
+	font-size: 0.5rem;
+	vertical-align: middle;
+}
+
+.doc>thead>tr>th {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.doc>tbody>tr>td {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.signPanel {
+	font-size: 1vw;
+	padding: 3px;
+}
+
+.table-panel {
+	padding: 3px;
+	overflow: auto;
+	border-collapse: collapse;
+}
+
+.left-area {
+	padding-right: 10px !important;
+}
+
+.loaction-scroll {
+	overflow: auto;
+}
+
+.loc-table {
+	margin-left: 0.2rem;
+}
+
+.location-table-panel {
+	padding: 3 0 3 4 !important;
+	overflow: scroll;
+}
+
+.table {
+	text-align: center;
+	color: black;
+}
+
+.table thead {
+	background-color: #DDE8FA !important;
+}
+
+.location-table-panel .table thead tr th, .location-table-panel .table tbody tr td
+	{
+	padding-left: 0;
+	padding-right: 0;
+	vertical-align: middle;
+	font-size: 1.8vh;
+}
+
+.table-panel .table thead tr th, .table-panel .table tbody tr td {
+	padding-left: 0;
+	padding-right: 0;
+	vertical-align: middle;
+	font-size: 1.8vh;
+}
+
+.LocationImg {
+	height: 50vh;
+	text-align: center;
+}
+
+.labelFontSize {
+	font-size: 0.9vw;
+}
+
+.table>thead>tr>th {
+	padding-top: 0.5vh;
+	padding-bottom: 0.5vh;
+}
+
+.table>tbody>tr>td {
+	padding-top: 0.3vh;
+	padding-bottom: 0.3vh;
+}
+
+.list tr td {
+	font-size: 0.5vh;
+}
+/* 버튼 폰트 사이즈*/
+.btn {
+	font-size: 1vh !important;
+}
+
+.search {
+	padding: 0 0.1vw 0 0.1vw !important;
+	color: #fff !important;
+	background-color: #6c757d !important;
+	border-color: #6c757d !important;
+}
+
+.create:hover, .update:hover, .delete:hover {
+	background-color: #3C5B92;
+	color: white;
+}
+/*스크롤*/
+.scroll {
+	height: 50vh;
+	overflow: scroll;
+}
+
+.location-arrow {
+	padding: 0 0 0 0;
+}
+/*업로드*/
+.file-regi-input {
+	height: 1.6rem;
+	margin-top: 0.5rem;
+	padding: 0 0 0 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.file-regi-input:after {
+	display: none;
+}
+
+.img-main-header {
+	height: 20rem !important;
+	text-align: center;
+	padding: 1px 1px 1px 1px !important;
+}
+
+.img-header {
+	height: 12rem !important;
+	text-align: center;
+	padding: 1px 1px 1px 1px !important;
+}
+/*로케이션*/
+.location-style .card-header {
+	padding: 0.1rem 1rem 0.1rem 0.1rem;
+	color: black;
+	font-style: inherit;
+	font-weight: bold;
+	font-size: 1.2rem;
+	background-color: #5E7DC0;
+}
+
+.location-style .card-body {
+	padding: 1 1 1 1;
+}
+
+.location-ul {
+	color: black;
+}
+
+.location-ul b {
+	margin-left: 4rem;
+	margin-right: 3.5rem;
+}
+
+.location-ul .title {
+	padding: 0 0 0 0;
+}
+
+.img-frame {
+	border-color: #5E7DC0;
+	border-style: solid;
+	margin: 0 0 0 0;
+}
+
+.main-scroll {
+	height: 8rem;
+	overflow: auto;
+}
+
+.table-scroll {
+	height: 36.25rem;
+	overflow: auto;
+	padding: 0 0 0 0;
+}
+
+.sub-scroll {
+	height: 36.07427055702918vh;
+	overflow: auto;
+	padding: 0 0 0 0;
+}
+
+.doc-scroll {
+	height: 30rem;
+	overflow: auto;
+	padding: 0 0 0 0;
+}
+
+.sub-location>tbody>tr>td {
+	padding-top: 0.1rem !important;
+	padding-bottom: 0.1rem !important;
+}
+/*스텝 바*/
+.stepBar {
+	position: relative;
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.stepBar .step {
+	position: relative;
+	display: block;
+	float: left;
+	line-height: 1.25rem;
+	padding: 0px 0px 0px 0px;
+	background-color: #D4D4D4;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.stepBar .step b {
+	font-size: 0.8rem;
+}
+
+.stepBar .step:before, .stepBar .step:after {
+	position: absolute;
+	left: -0.313rem;
+	display: block;
+	content: '';
+	background-color: #D4D4D4;
+	border-left: 4px solid #FFF;
+	width: 0.625rem;
+	height: 0.625rem;
+}
+
+.stepBar .step:after {
+	top: 0;
+	-moz-transform: skew(30deg);
+	-ms-transform: skew(30deg);
+	-webkit-transform: skew(30deg);
+	transform: skew(30deg);
+}
+
+.stepBar .step:before {
+	bottom: 0;
+	-moz-transform: skew(-30deg);
+	-ms-transform: skew(-30deg);
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+}
+
+.stepBar .step:first-child {
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.stepBar .step:first-child:before, .stepBar .step:first-child:after {
+	content: none;
+}
+
+.stepBar .step:last-child {
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.stepBar .step.active {
+	background-color: #5E7DC0;
+}
+
+.stepBar .step.active:before, .stepBar .step.active:after {
+	background-color: #5E7DC0;
+}
+
+.stepBar.step2 .step {
+	width: 50%;
+}
+
+.stepBar.step3 .step {
+	width: 33.333%;
+}
+
+.stepBar.step4 .step {
+	width: 25%;
+}
+
+.stepBar.step5 .step {
+	width: 20%;
+}
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*create form styles*/
+.msform {
+	text-align: center;
+	position: relative;
+	margin-top: 0.5rem !important;
+}
+
+.msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 0px;
+	padding: 0.1rem 0.2rem;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+
+/*Hide all except first fieldset*/
+.msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+/*buttons*/
+.msform .action-button {
+	width: 100px;
+	background: #2098ce;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	cursor: pointer;
+	padding: 5px 1px;
+	margin: 5px 1px;
+}
+
+.msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #2098ce;
+}
+
+.msform .action-button-previous {
+	width: 100px;
+	background: #aCbEd0;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 25px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+
+.msform .action-button-previous:hover, #msform .action-button-previous:focus
+	{
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #aCbEd0;
+}
+
+#SampleList tr td {
+	padding: 0 2 0 5;
+	font-size: 0.6631299734748011vh;
+}
+
+.flip-Effect {
+	display: none;
+}
+
+.suju-button {
+	background: #5E7DC0;
+	color: white;
+	font-weight: bold;
+}
+
+.suju-button:hover {
+	background: #5e94c0;
+}
+
+#constructionLocationLists>tr>td {
+	font-size: 0.813rem !important;
+}
+
+#constructionRegiLocaitonLists>tr>td:first-child,
+	#constructionRegiLocaitonLists>tr>td:last-child {
+	width: 10% !important;
+}
+
+.no-scroll {
+	-ms-overflow-x-style: none !important;
+	overflow-y: hidden;
+	overflow-x: auto;
+	height: 3.3vh;
+}
+
+.no-scroll::-webkit-scrollbar {
+	display: none !important;
+}
+
+@media screen and (max-width: 1040px) {
+	.stepBar>li>b:last-child {
+		display: none;
+	}
+}
+
+#registerConsLocation>tr>td {
+	font-size: 0.813rem !important;
+}
+
+.sujuSub>tr>td {
+	padding: 0px 0px 0px 0px !important;
+}
+
+.sujuSub>tr>td:nth-child(1) {
+	width: 20%;
+}
+
+.sujuSub>tr>td:nth-child(2) {
+	width: 40%;
+}
+
+.sujuSub>tr>td:nth-child(3) {
+	width: 37%;
+}
+
+.sujuSub>tr>td:nth-child(4) {
+	width: 3%;
+}
+
+.sujuSub>tr>td>i {
+	padding: 1px 3px 1px 3px !important;
+}
+
+#OrderInfoSearch {
+	text-align: center;
+/* 	padding: 0px 2.6041666666666665vw 0px 2.6041666666666665vw !important; */
+}
+
+#OrderInfoSearch>option {
+	text-align: left !important;
+}
+
+.custom-table>tbody {
+	display: block;
+	overflow: auto;
+}
+
+.custom-table>thead>tr, .custom-table>tbody>tr {
+	display: table;
+	width: 100%;
+}
+
+.custom-table>thead>tr>th, .custom-table>tbody>tr>td {
+	padding: 0px;
+	border-top: none;
+	border-right: none;
+}
+
+.custom-table>thead {
+	width: 100%;
+}
+
+.custom-table {
+	width: 100%;
+}
+
+.progress-bar-striped {
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%,
+		transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%,
+		rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-size: 1rem 1rem;
+}
+
+/*modal-size  */
+.modal-dialog.modal-fullsize {
+  max-width: 90%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+.modal-content.modal-fullsize {
+  height: auto;
+  min-height: 90%;
+  border-radius: 0; 
+}
+.modal.modal-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal.modal-center:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog.modal-center {
+  display: inline-block;
+  text-align:center;
+  vertical-align: middle; 
+}
+
+.calendar-table thead tr th,.calendar-table tbody tr td{
+	color: black!important;
+}
+
+.drp-selected{
+   color: black;
+}
+
+.searchHide{
+	display:none !important;
+}
+
+.productionplanSubmit {
+	width: 50%;
+    height: 2rem;
+    background-color: #5a6268;
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userinfo {
+	color: black;
+}

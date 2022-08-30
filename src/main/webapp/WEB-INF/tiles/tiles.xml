@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+    "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="classic" template="/WEB-INF/tiles/layouts/classic.jsp">
+    	<put-attribute name="TopMenu" value="/WEB-INF/tiles/components/TopMenu.jsp" />
+        <put-attribute name="SideBar" value="/WEB-INF/tiles/components/NewSideBar.jsp" />
+    </definition>
+    <definition name="*/*" extends="classic">
+        <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
+    </definition>
+    <definition name="start" template="/WEB-INF/tiles/layouts/start.jsp">
+    <put-attribute name="content" value=""/>
+    </definition>
+    <definition name="login" extends="start">
+
+          <put-attribute name="content" value="/WEB-INF/views/statics/login.jsp"></put-attribute>
+          
+    </definition>
+    <definition name="signup" extends="start">
+
+          <put-attribute name="content" value="/WEB-INF/views/statics/signup.jsp"></put-attribute>
+          
+    </definition>
+    <definition name="findInfo" extends="start">
+
+          <put-attribute name="content" value="/WEB-INF/views/statics/findInfo.jsp"></put-attribute>
+          
+    </definition>
+     <definition name="readyPage" extends="start">
+
+          <put-attribute name="content" value="/WEB-INF/views/statics/readyPage.jsp"></put-attribute>
+          
+    </definition>
+     <definition name="work" extends="start">
+
+          <put-attribute name="content" value="/WEB-INF/views/statics/work.jsp"></put-attribute>
+          
+    </definition>
+    
+</tiles-definitions>

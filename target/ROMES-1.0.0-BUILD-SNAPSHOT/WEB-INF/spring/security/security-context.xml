@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:sec="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security.xsd">
+	<!-- 스프링 시큐리티 설정의 거의 모든 것 -->
+	<!-- isAnonymous() 익명 -->
+	<!-- isAuthenticated() 로그인 인증 -->
+	<!-- permitAll 전체접근허용  -->
+	<!-- denyAll  전체접근불가 -->
+	<!-- <sec:csrf disabled="true"/> -->
+	<sec:http pattern="/css/**" security="none" />
+	<sec:http pattern="/img/**" security="none" />
+	<sec:http pattern="/js/**" security="none" />
+	<sec:http pattern="/uploads/**" security="none" />
+	<sec:http pattern="/image/**" security="none"/>
+	<sec:http pattern="/monitor/**" security="none"/>
+	<sec:http pattern="/Android/**" security="none"/>
+	<sec:http auto-config='true' use-expressions="true">
+		<sec:intercept-url pattern="/" access="permitAll" />
+        <sec:intercept-url pattern="/findUserInfo" access="permitAll"/>
+		<sec:intercept-url pattern="/main" access="permitAll" />
+        <sec:intercept-url pattern="/signup" access="permitAll" />
+		<sec:form-login login-page="/"
+                login-processing-url="/loginAsk"
+                default-target-url="/main"
+                username-parameter="loginid" 
+                password-parameter="loginpw"
+                authentication-failure-handler-ref="userLoginFailHandler" 
+                always-use-default-target='true' />
+		<sec:logout invalidate-session="true" logout-url="/logout" logout-success-url="/?logout=true" />
+		
+		<!-- enable csrf protection -->
+		<sec:csrf />
+	</sec:http>
+	<sec:authentication-manager>
+		<sec:authentication-provider>
+			<sec:password-encoder hash="bcrypt" />
+			<sec:jdbc-user-service
+				data-source-ref="dataSource"
+				users-by-username-query="SELECT loginid, loginpw, enabled FROM user_table WHERE loginid = ?"
+				authorities-by-username-query="with users as (select * from user_table where loginid= ? ) select (select loginid from users) ,authority from authorities where id = (select authority_id from user_table where id = (select id from users))" />
+			
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+</beans>
