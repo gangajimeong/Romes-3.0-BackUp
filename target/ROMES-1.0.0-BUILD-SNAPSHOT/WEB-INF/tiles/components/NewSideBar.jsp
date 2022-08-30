@@ -39,6 +39,7 @@
 			<ul class="sub-menu">
 				<li><a class="link_name" href="#">생산관리</a></li>
 				<li><a href="<c:url value="/main" />" class="tabAdd">수주/작업지시</a></li>
+				<li><a href="<c:url value="/main" />" class="tabAdd">수주/작업지시 확인</a></li>
 				<li><a href="<c:url value="/main" />" class="tabAdd">생산계획</a></li>
 				<li><a href="<c:url value="/main" />" class="tabAdd">시공지시</a></li>
 				<li><a class="tabAdd" href="<c:url value="/main" />">작업보고서</a></li>

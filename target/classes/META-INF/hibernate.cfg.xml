@@ -60,7 +60,7 @@
 		<mapping class="com.company.ROMES.entity.WorkReport"/>
 		<mapping class="com.company.ROMES.entity.ProcessMaster"/>
 		<mapping class="com.company.ROMES.entity.Design"/>
-
+		
 	</session-factory>
 
 </hibernate-configuration>

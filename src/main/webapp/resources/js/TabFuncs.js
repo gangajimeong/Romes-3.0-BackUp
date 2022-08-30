@@ -327,7 +327,6 @@ function AssignEvtFunc(url) {
 		case "UserInfo": evt.UserInfo(); break;
 		case "WorkingLine": evt.WorkingLine(); break;
 		case "MaterialMaster": evt.MaterialMaster(); break;
-		case "OkEvent": evt.OkEvent(); break; // ok test page
 	}
 
 }

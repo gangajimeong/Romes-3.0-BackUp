@@ -82,9 +82,6 @@ public class ReceivedOrderInfo {
 	//----------------------------------------------
 	@Column(columnDefinition = "boolean default false")
 	boolean isDisabled= false;
-	// ok test 용 칼럼
-	@Column
-	private boolean okStatus;
 	
 	public void addWorkInfo(WorkOrderInfo info) {
 		this.workOrders.add(info);

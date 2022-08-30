@@ -22,7 +22,7 @@
 	<sec:http auto-config='true' use-expressions="true">
 		<sec:intercept-url pattern="/" access="permitAll" />
         <sec:intercept-url pattern="/findUserInfo" access="permitAll"/>
-		<sec:intercept-url pattern="/main" access="permitAll" />
+        <sec:intercept-url pattern="/main" access="isAuthenticated()" />
         <sec:intercept-url pattern="/signup" access="permitAll" />
 		<sec:form-login login-page="/"
                 login-processing-url="/loginAsk"

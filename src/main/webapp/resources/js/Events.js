@@ -18,7 +18,6 @@ import CapaEvent from './CapaEvent.js';
 import KpiPageEvent from './KpiPageEvent.js';
 import LogEvents from './LogEvents.js';
 import orderinfoEvt from './OrderInfoForKS.js';
-import OkEvent from './OkEvent'; // ok event 처리 js test 페이지
 import ConstructionOrder from './ConstructionOrder.js';
 import Simulation from './Simulation.js';
 import WorkReport from './WorkReport.js';
@@ -439,11 +438,5 @@ export class Events {
 	UserInfo(){
 		const e = new UserInfo;
 		e.userInfo();
-	}
-
-	// Ok Event 처리 JS
-	OkEvent() {
-		const e = new OkEvent;
-
 	}
 }

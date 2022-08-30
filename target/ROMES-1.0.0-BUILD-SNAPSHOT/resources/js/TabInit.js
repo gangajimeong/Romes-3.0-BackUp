@@ -20,6 +20,7 @@ const urlList = [
 	
 	
 	{ "title": "수주/작업지시", "url": "OrderInfo"},
+	{ "title": "수주/작업지시 확인", "url": "WorkConfirmation"},
 	{ "title": "생산계획", "url": "ProductionPlan"},
 	{ "title": "시공지시", "url": "ConstructionOrder"},
 	{ "title": "작업보고서", "url": "WorkReport"},

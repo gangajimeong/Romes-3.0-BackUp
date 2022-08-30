@@ -201,7 +201,7 @@ public class OrderInfoConstroller {
 	
 	
 	
-	
+//
 //	@ResponseBody
 //	@RequestMapping(value = "getReceivedOrderInfo/{id}", method = RequestMethod.GET)
 //	public JSONObject getReceivedOrderInfo(@PathVariable int id) {

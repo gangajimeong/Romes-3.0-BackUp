@@ -37,8 +37,6 @@ public class ReceivedOrderDAO implements ReceivedOrderDAOInterface{
 
 	@Override
 	public List<ReceivedOrderInfo> selectData(Session session, LocalDateTime date, LocalDateTime date2) {
-		System.out.println(date);
-		System.out.println(date2);
 		return session.createQuery("Select this_ from ReceivedOrderInfo this_ where this_.isDisabled=false and (this_.receivedOrderDate between :start and :end) order by this_.receivedOrderDate desc")
 				.setParameter("start", date.isBefore(date2)?date:date2)
 				.setParameter("end", date.isBefore(date2)?date2:date)
